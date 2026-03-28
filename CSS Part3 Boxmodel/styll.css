@@ -1,0 +1,21 @@
+#outter{
+  height: 200px;
+  width: 70px;
+  border: 2px solid black;
+}
+.circle{
+  border: 2px solid black;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+#stop{
+  background-color: red;
+}
+#wait{
+  background-color: yellow;
+}
+#go{
+  background-color: green;
+}

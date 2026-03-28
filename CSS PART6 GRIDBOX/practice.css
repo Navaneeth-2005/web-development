@@ -1,0 +1,67 @@
+#q1{
+    height: 800px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+   grid-gap:10px
+}
+#header{
+    grid-column: 1/13;
+    background-color: red;
+}
+#sidebr{
+    grid-row: 2/span 10;
+    grid-column: 1/span 3;
+    background-color: yellow;
+}
+#nav{
+    grid-column: 4/span 6;
+    background-color: purple;
+}
+#ads{
+    grid-row: 2/span 10;
+    grid-column: 10/span 3;
+    background-color: blue;
+}
+#main{
+    grid-row: 3/span 9;
+    grid-column: 4/span 6;
+    background-color: pink;
+
+}
+#fttr{
+    grid-column: 1/span 12;
+    background-color: pink;
+}
+@media (max-width: 720px){
+    #fttr{
+        grid-column:4/span 6;
+        
+    }
+    #header{
+        grid-column: 1/span 9;
+    }
+    #ads{
+        grid-column:1/span 3;
+        grid-row:12/span 1;
+
+    }
+}
+.loader{
+    height: 300px;
+    width:300px;
+    border:16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid goldenrod;
+    animation: my_anim 2s linear infinite;
+}
+@keyframes my_anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}

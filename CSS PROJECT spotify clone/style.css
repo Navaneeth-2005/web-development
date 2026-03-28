@@ -1,0 +1,271 @@
+body{
+    
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    padding: 0.5rem;
+}
+.sidebar{
+   background-color:black;
+   width: 300px;
+   border-radius: 1rem;
+   margin-right: 0.5rem;
+ 
+}
+.main-content{
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    background-color: black;
+
+}
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+.sidebar .nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav-option{
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    padding-right: 0.7rem;
+}
+.nav-option a{
+    font-size: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+
+
+}
+.lib-options a{
+    color: white;
+    text-decoration: none;
+
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.icons i:hover{
+    opacity: 1;
+
+}
+.lib-options img{
+    height:1.25rem;
+    width: 1.25rem;
+    padding-right: 0.5rem;
+}
+.box{
+    height:8rem;
+    background-color: #232323;
+    border-radius: 1rem;
+    margin: 0rem 0 0.5rem 0;
+    padding: 0.75rem 1.25rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.7;
+    font-weight: 500;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    height: 2rem;
+    width: fit-content;
+}
+.big{
+    margin-top: 1.75rem;
+    height: 10rem;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+}
+.sticky-nav-icons{
+    margin-left: 1rem;
+}
+.sticky-nav-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.user{
+    padding-top: 1rem;
+}
+.download-arrow{
+    margin-right: 0.5rem;
+}
+.download{
+    background-color: black;
+    color: white;
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none; 
+    }
+    .download{
+        display: none;
+    }
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    transition: transform 0.5s linear 0s;
+}
+.card-img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+.footer{
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.line{
+    border-top: 1px solid white;
+    opacity: 0.3;
+    width: 90%;
+
+}
+.music-player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.control{
+    width: 25%;
+}
+.player-control-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.4rem;
+}
+.player-control-icons img{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+.player-control-icons img:hover{
+    opacity: 1;
+}
+.middle{
+    transform: scale(1.8);   
+}
+.progressbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.2rem;
+}
+.bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.badge:hover{
+    transform: scale(1.15);
+}

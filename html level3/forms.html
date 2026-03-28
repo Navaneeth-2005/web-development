@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+   <form action="/action">
+    <div>
+        <label for="username">UserName</label>
+        <input type="text" id="username" name="user" placeholder="Enter username" >
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pass" placeholder="Password">
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter Age">
+      </div>
+      <div>
+        <label for="check">I am 18+</label>
+        <input type="checkbox" id="check" name="age">
+      </div>
+      <div>
+        <label for="apple">Apple</label>
+        <input type="radio" id="apple" name="Fruit" value="apple">
+        <label for="mango">Mango</label>
+        <input type="radio" id="mango" name="Fruit" value="mango">
+        <label for="banana">Banana</label>
+        <input type="radio" id="banana" name="Fruit" value="banana">
+      </div>
+      <div>
+        Choose your proffesion
+        <select name="proffesion" id="proffesion">
+            <option>Select an option</option>
+          <option value="stu">Student</option>
+          <option value="dev" selected>Developer</option>
+        </select>
+      </div>
+      <div>
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" name="vol" min="0" max="100" step="10">
+      </div>
+      <div>
+        <label for="feed">Enter Your valuable feedback</label>
+        <textarea id="feed" name="feedback" rows="5" cols="11" placeholder="write your feedback"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+   </form>
+   <hr>
+   <form action="https://www.google.com/search">
+    <label for="search">Enter the text</label>
+    <input type="text" id="search" name="q" placeholder="Enter the text you want to Search in google">
+    <button type="submit">Search</button>
+   </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+#Div1{
+    height: 200px;
+    width:200px;
+    background-color: #00ffffff;
+    margin-top: 10px;
+    transition:transform 2s ease-in-out 0s;
+
+}
+#Div1:hover{
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(2,2);
+
+}   
+/*transform css*/
+
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px;
+}
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+#one{
+    transform: rotate(45deg);
+}
+#two{
+    transform: scale(0.5,0.5);
+}
+#three{
+    transform: translate(200px,200px);
+}
+#four{
+    transform: skew(30deg);
+}
+#five{
+    transform: rotate(45deg) translateX(100px) ;
+}
+#shd{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    box-shadow: -10px -10px 20px black;
+    margin-top: 200px;
+}
+
+#bkimg{
+    height: 200px;
+    width: 400px;
+    background-image: url(https://wallpapercave.com/wp/wp12712375.jpg);
+    background-size: cover;
+}

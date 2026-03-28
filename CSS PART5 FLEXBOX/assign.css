@@ -1,0 +1,38 @@
+#container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid cadetblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+}
+.ele{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: gray;
+    font-size:50px;
+    text-align: center;
+    border-radius: 10px;
+}
+#navbar{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+.in{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    padding-left: 5px;
+    line-height: 50px;
+}
